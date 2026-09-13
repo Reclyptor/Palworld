@@ -1,0 +1,28 @@
+# Quick start. Copy, set the passwords, `docker compose up -d`.
+# Full configuration: README.md
+services:
+  palworld:
+    image: ghcr.io/reclyptor/palworld:latest
+    container_name: palworld
+    restart: unless-stopped
+    ports:
+      - "8211:8211/udp"
+      - "27015:27015/udp"
+    environment:
+      TZ: America/Chicago
+      SERVER_NAME: "Palworld"        # the name notifications use
+      SERVER_DESCRIPTION: "friends only"   # SERVER_NAME above is also the in-game server name
+      MAX_PLAYERS: "16"
+      GAME_PASSWORD: "change-me"
+      ADMIN_PASSWORD: "change-me-too"
+      PUBLIC: "false"
+      DISCORD_WEBHOOK_URL: ""
+      BACKUP_CRON: "0 4 * * *"
+      BACKUP_RETAIN_DAYS: "14"
+      UPDATE_CRON: "0 * * * *"
+      UPDATE_WARN_MINUTES: "15"
+    volumes:
+      - ./data:/data
+      - ./backups:/backups
+    # The image runs as uid/gid 1000. Create the directories with that owner:
+    #   mkdir -p data backups && sudo chown -R 1000:1000 data backups

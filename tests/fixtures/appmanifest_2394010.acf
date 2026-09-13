@@ -1,0 +1,21 @@
+"AppState"
+{
+	"appid"		"2394010"
+	"Universe"		"1"
+	"name"		"Palworld Dedicated Server"
+	"StateFlags"		"4"
+	"installdir"		"PalServer"
+	"buildid"		"13378465"
+	"InstalledDepots"
+	{
+		"1006"
+		{
+			"manifest"		"4884950798805348056"
+		}
+		"2394012"
+		{
+			"manifest"		"9082869442509405085"
+			"size"		"7000000000"
+		}
+	}
+}

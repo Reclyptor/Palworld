@@ -1,0 +1,6 @@
+{"players":[
+ {"name":"Alice","accountName":"alice","playerId":"7B0F3A2100000000A1B2C3D4E5F60718","userId":"steam_76561198000000001","ip":"10.0.0.2","ping":31.5,"location_x":100,"location_y":200,"level":12,"building_count":3},
+ {"name":"Bob Builder","accountName":"bobb","playerId":"91C2D4E600000000B1B2C3D4E5F60719","userId":"steam_76561198000000002","ip":"10.0.0.3","ping":40.1,"location_x":0,"location_y":0,"level":3,"building_count":0},
+ {"name":"Loading Larry","accountName":"larry","playerId":"None","userId":"steam_76561198000000003","ip":"10.0.0.4","ping":0,"location_x":0,"location_y":0,"level":1,"building_count":0},
+ {"name":"Zero Zed","accountName":"zed","playerId":"00000000000000000000000000000000","userId":"steam_76561198000000004","ip":"10.0.0.5","ping":0,"location_x":0,"location_y":0,"level":1,"building_count":0}
+]}
